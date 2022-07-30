@@ -21,4 +21,19 @@ const moveElementToEnd = (array, toMove) => {
     return array;
 }
 
-console.log(moveElementToEnd(array, toMove))
+const moveElementToEnd2 = (nums, toMove) => {
+    let tmp = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== toMove) {
+            let temp = array[i];
+            array[i] = array[tmp];
+            array[tmp] = temp;
+            tmp++;
+        }
+    }
+
+    return nums;
+}
+
+// console.log(moveElementToEnd(array, toMove))
+console.log(moveElementToEnd2(array, toMove))
