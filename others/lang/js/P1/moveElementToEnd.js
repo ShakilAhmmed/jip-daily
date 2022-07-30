@@ -21,4 +21,4 @@ const moveElementToEnd = (array, toMove) => {
     return array;
 }
 
-console.log(moveElementToEnd(array, 2))
+console.log(moveElementToEnd(array, toMove))
